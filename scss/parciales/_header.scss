@@ -1,0 +1,25 @@
+.header {
+    background-color: $ocreInstitucional;
+    &__bloqSuperior{
+     align-items: center;
+    }
+    &__redes {
+        justify-content: end;
+       }
+    &__redes img{
+        width: 75%;
+       }
+    &__menu {
+        background-image: linear-gradient(to top, $verdeInstitucional,#9cb9a1 ,$verdeInstitucional);
+        font-family: 'Lato';
+        & button.botGrales{
+            text-decoration: none;
+            background-color: $verdeInstitucional;
+            color: $ocreInstitucional;
+            padding: 0.2rem 0.5rem 0.5rem 0.5rem;
+            border: none;
+            border-radius: 5px;
+            }
+    }
+ }
+ 

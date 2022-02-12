@@ -1,0 +1,15 @@
+.footer {
+    Font-family: 'Lato', sans-serif;
+    background-color: #9cb9a1;
+    text-align: center;
+    padding: 1%;
+    &__link {
+        color: #eae9e4;
+        text-decoration: none;
+        font-size: 0.8rem;
+    }
+    &__link:hover {
+        color: $verdeHovers;
+    
+    }
+}

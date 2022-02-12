@@ -1,0 +1,21 @@
+@import "./variables"; 
+
+@each $boton, $color in $botones {
+    .btn#{$boton} {
+        background-color: $color;
+        text-decoration: none;
+        color: $ocreInstitucional;
+        padding: 0.2rem 0.5rem 0.5rem 0.5rem;
+        border: none;
+        border-radius: 5px;
+    }
+ }
+
+.btnGrales:hover  {
+    transform: scale(105%);
+    color: $ocreInstitucional;
+}
+a.btnCompra:hover  {
+    transform: scale(105%);
+    color: $ocreInstitucional;
+}

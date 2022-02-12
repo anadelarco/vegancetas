@@ -1,0 +1,263 @@
+
+@import "./mediaQuerys";
+@import "./variables"; 
+
+.mainIndex{
+    background-color: $ocreInstitucional;
+    &__article {
+        justify-content: center;
+        .mainIndex__texto{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            font-family: 'Lato'
+        }
+        .mainIndex__texto h6{
+            color: #495057;
+            text-decoration: none;
+            background-color: rgba(255,255,255, 0.9);
+            padding: 0.5rem;
+            border-radius: 5px;
+            margin-left: 0.8rem;
+            display: block;
+            margin-bottom: 2.7rem;
+        }
+        .mainIndex__texto a{
+            text-decoration: none;
+            background-color: $verdeInstitucional;
+            color: $ocreInstitucional;
+            margin-left: 0.8rem;
+            padding: 0.2rem 0.5rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            position: absolute;
+            margin-bottom: 0.7rem;
+         }
+    }
+}
+/* ------------- MAIN RECETAS  ------------- */
+.mainRecetas{
+   background-color: $ocreInstitucional;
+   &__contenedor{
+       background-color: $ocreInstitucional;
+       box-shadow: 0.2em;
+       font-family: 'Lato'
+   }
+   &__contenedor h5{   
+       color: $verdeInstitucional;
+    }
+   &__contenedor:hover {
+    background-color: white;
+    transform: scale(105%);
+   }
+    }
+
+
+
+/* ------------- MAIN RECETA YA ELEGIDA  ------------- */
+
+.mainReceta{
+    &__elegida{
+    display: flex;
+    width: 100%;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-family: 'Lato';
+    }
+    &__contImagenes {
+        width: 100%;
+        background-color: $ocreInstitucional;
+        margin: 2%;
+        border-radius: 2%;
+        flex-wrap: wrap;
+        justify-content: center;
+        display: flex;  
+    }
+    &__contImagenes img{
+        display: inline;
+        border-radius: 5px;
+        margin: 2%;
+        }
+              
+        
+    &__contImagenes img.oculta{
+            @include movil {
+                display: none;
+                }
+    }
+    &__nombre{
+        width: 100%;
+        display: block;
+        background-color: #e9aba9;
+        padding: 0.7rem 0rem 0.4rem 2rem;
+        color: white; 
+    }
+    &__nombre h2{
+        font-family: 'Lato';
+        font-size: 1.1rem;
+    } 
+    &__contenido{
+        display: inline-flex;
+        width: 100%;
+        justify-content: space-around;
+        font-family: 'Lato', sans-serif;
+        background-color: $ocreInstitucional;
+        border-radius: 5px;
+        margin: 2%;  
+        @include movil {
+                display: inline-grid;
+            }
+        }  
+    
+    &__contenedorInt{
+        display: inline;
+        padding: 1% 2% 0% 2%;
+        font-size: 0.9rem;
+        text-align: justify;
+    }
+    &__contenedorInt h3{
+        color: #9cb9a1;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+    &__contenedorInt ul li{
+        margin-top: 13%;
+        @include movil{
+            margin-top: 7%;
+        }
+    }
+    &__contenedorInt ol li{
+        @include movil{
+            margin-top: 7%;
+            padding-right: 0.7rem;
+        }
+    }
+}
+
+/* ------------- MAIN 404  ------------- */
+
+.main404{
+    display: flex;
+    width: 100%;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-family: 'Lato';
+    background-color: $ocreInstitucional;
+    text-align: center;
+    & div {
+        padding: 0%;
+        margin-bottom: 2rem;
+    }
+     & h3 {
+         margin-top: 4rem;
+        color:$verdeInstitucional;
+    }
+
+}
+ 
+
+
+/* ------------- MAIN CONTACTO FORMULARIOS  ------------- */
+
+.mainContacto {
+    &__formulario{
+    background-color: $ocreInstitucional;
+    width: 100%;
+    padding: 2% 2% 2% 5%;
+    font-family: 'Lato';
+    color:#646464;
+    font-size: 1rem;
+    }
+    &__formulario h2{
+        font-size: 1.3rem;
+    }
+    &__contInternos{
+    padding: 0.4rem; 
+    }    
+    &__contInternos h3 {
+    padding-bottom: 1%;
+    color: $verdeInstitucional;
+    font-size: 1.1rem;
+    }
+    &__contInternos select {
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    padding: .5% 2%;
+    color: #646464;
+    }
+    &__contInternos input, textarea{
+    margin-left: 2%;
+    }
+    &__Check {
+    padding: 1% 2% 1%;
+}
+}
+#compText{
+    color: $verdeInstitucional;
+    border: none;
+    padding: 0.5rem 0rem 0.3rem 0.9rem;
+    border-radius: 5px;
+    width: auto;
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+}
+#areaText{
+    color: $verdeInstitucional;
+    background-color: #ffffff;
+    border: none;
+    padding: 0.5%;
+    border-radius: 5px;
+    font-family: 'Lato';
+    width: auto;
+}
+#botonesForm {
+    text-decoration: none;
+    background-color: $verdeInstitucional;
+    color: $ocreInstitucional;
+    padding:  0.375rem 0.75rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    position: inherit;
+    border: none;
+    font-family: 'Lato';
+    margin-bottom: 1%;
+}
+#botonesForm:hover {
+    color: $verdeHovers;
+}
+
+/* ------------- MAIN DE LOS LEGALES  ------------- */
+.mainLegales{
+    
+    &__section{
+        display: flex;
+        width: 100%;
+        position: relative;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    &__article {
+        background-color: #eae9e4;
+        font-family: 'Lato', sans-serif;
+        padding: 0.7rem;
+        border-radius: 5px;
+        text-align: left;
+    }
+    &__article h3{
+        margin-bottom: .5%;
+        color: $verdeInstitucional;
+    }
+
+    
+        
+    
+}
