@@ -113,7 +113,8 @@ a.btnCompra:hover {
 .mainReceta__contImagenes img {
   display: inline;
   border-radius: 5px;
-  margin: 2%; }
+  margin: 2%;
+  width: 15%; }
 
 @media screen and (max-width: 320px) {
   .mainReceta__contImagenes img.oculta {
